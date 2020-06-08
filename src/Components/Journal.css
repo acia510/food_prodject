@@ -1,0 +1,268 @@
+
+.title_journal {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    background-color: #020101;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .title_journal {
+        font-size: 2.2rem;
+        padding: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title_journal {
+        font-size: 2.0rem;
+        padding: 1.2rem;
+    }
+}
+
+.container_jn {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .container_jn {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.wrapper_jn {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 6rem;
+    margin: 0 auto;
+}
+
+.img_bg_3 {
+    width: 580px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .img_bg_3 {
+        width: 420px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container_jn {
+        width: 600px;
+        padding: 0 10px;
+        margin: auto;
+    }
+    .img_bg_3 {
+        width: 340px;
+        height: auto;
+    }
+    .wrapper_jn {
+        justify-content: space-around;
+    }
+
+}
+
+.img_red {
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .img_red {
+        width: 80px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .img_red {
+        width: 50px;
+        height: auto;
+    }
+}
+
+.block_person {
+    padding-left: 4rem;
+}
+
+@media (max-width: 1024px) {
+    .block_person {
+        padding-left: 2.8rem;
+    }
+}
+
+.name {
+    padding-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.bracket {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    color: #1CC805;
+}
+
+.description_jn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.0rem;
+    color: #4F4E4C;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 1.0rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .description_jn {
+        font-size: 0.9rem;
+        width: 300px;
+    }
+
+    .bracket {
+        font-size: 0.9rem;
+    }
+}
+
+
+.title_jn {
+    padding-bottom: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container_articles {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.articles_inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8rem;
+}
+
+
+
+
+.articles_image {
+    width: 340px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.articles_img {
+    width: auto;
+    height: 100%;
+    transition: all 0.2s;
+    border-radius: 10px 10px 0 0;
+}
+.popular_image:hover {
+    transform: scale(1.1);
+}
+
+.articles_item_title {
+    padding-top: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+   /* text-align: center;*/
+}
+
+.articles_description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    width: 340px;
+    color: #4F4E4C;
+}
+
+
+@media (max-width: 1024px) {
+    .articles_inner {
+        display: block;
+    }
+    .articles_item {
+        display: flex;
+        justify-content: space-around;
+        padding: 1.2rem;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .title_jn {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .articles_image {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .articles_item_title {
+        font-size: 1rem;
+    }
+
+    .articles_item_title {
+        padding-left: 40px;
+    }
+
+    .articles_description {
+        padding-left: 40px;
+        font-size: 0.9rem;
+        width: 260px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

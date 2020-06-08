@@ -1,26 +1,68 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Journal from "./Components/Journal";
+import Home from "./Components/Home";
+import Ideas from "./Components/Ideas";
+import Authors from "./Components/Authors";
+import Footer from "./Components/Footer";
+//import CallToAction from "./Components/CallToAction";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import {BrowserRouter as Router,
+    Switch,
+    Route,
+    Link} from "react-router-dom";
+import CallToAction from "./Components/CallToAction";
+
+
+
+export default function App() {
+    return (
+        <Router>
+            <div>
+                <nav className="flex">
+                    <ul className="Menu">
+                        <li>
+                            <Link className="Menu_title" to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link className="Menu_title" to="/journal">Journal</Link>
+                        </li>
+                        <li>
+                            <Link className="Menu_title" to="/ideas">Ideas</Link>
+                        </li>
+                        <li>
+                            <Link className="Menu_title" to="/authors">Authors</Link>
+                        </li>
+                    </ul>
+                    <button className="button" type="submit">Explore menu</button>
+
+                </nav>
+                <div className="mobile-menu"></div>
+
+
+                {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+                <Switch>
+                    <Route path="/journal">
+                        <Journal />
+                    </Route>
+                    <Route path="/ideas">
+                        <Ideas />
+                    </Route>
+                    <Route path="/authors">
+                        <Authors />
+                    </Route>
+                    <Route path="/">
+                        <Home />
+                    </Route>
+                </Switch>
+            </div>
+
+            <CallToAction />
+
+            <Footer/>
+        </Router>
+    );
 }
 
-export default App;
