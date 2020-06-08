@@ -1,0 +1,145 @@
+.App {
+    min-height: 100vh;
+}
+
+
+.flex {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    /*position: absolute;*/
+}
+
+
+
+.mobile-menu {
+    width: 30px;
+    margin: 20px;
+    border-bottom: 1px solid black;
+    position: relative;
+    display: none;
+    left: 86%;
+}
+
+.mobile-menu:before {
+     content: "";
+     position: absolute;
+     width: 30px;
+     border-bottom: 1px solid black;
+     top: -10px;
+ }
+
+.mobile-menu:after {
+     content: "";
+     position: absolute;
+     width: 30px;
+     border-bottom: 1px solid black;
+     top: 10px;
+ }
+
+
+
+@media (max-width: 800px) {
+    .mobile-menu {
+        display: inline-block;
+        margin-right: auto;
+    }
+
+    .flex .Menu {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .flex {
+        width: 1000px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex {
+        width: 700px;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+}
+
+
+.Menu {
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 10px;
+
+
+}
+
+
+.Menu_title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #020101;
+    padding: 50px;
+
+}
+
+@media (max-width: 1200px) {
+    .Menu_title {
+        font-size: 14px;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Menu_title {
+        font-size: 14px;
+        padding: 24px;
+    }
+
+}
+
+.Menu_title:hover {
+    font-weight: 600;
+    color: #FF8A00;
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #FF8A00;
+    font-size: 14px;
+    padding: 0 24px;
+
+}
+
+@media (max-width: 1200px) {
+    .button {
+        font-size: 12px;
+        padding: 0 24px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 0 18px;
+    }
+
+}
